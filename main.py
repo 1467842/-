@@ -16,7 +16,7 @@ app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 
 user_id = os.environ["USER_ID"]
-my_user_id = os.environ["MY_USER_ID"]
+user_id2 = os.environ["USER_ID2"]
 template_id = os.environ["TEMPLATE_ID"]
 
 def get_mum(momday1, today, round, tempday):
@@ -91,5 +91,5 @@ motertext = get_mum('2022-12-11', today_mum, 32, 1)
 data = {"weather": {"value": wea}, "temperature": {"value": temperature}, "love_days": {"value": get_count()},
         "mum_days": {"value": motertext},
         "birthday_left": {"value": get_birthday()}, "words": {"value": get_words(), "color": get_random_color()}}
-res = wm.send_template(my_user_id, template_id, data)
+res = wm.send_template(user_id2, template_id, data)
 wm.send_template(user_id, template_id, data)
