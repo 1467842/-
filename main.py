@@ -90,5 +90,5 @@ motertext = get_mum('2022-12-11', today_mum, 32, 1)
 data = {"weather": {"value": wea}, "temperature": {"value": temperature}, "love_days": {"value": get_count()},
         "mum_days": {"value": motertext},
         "birthday_left": {"value": get_birthday()}, "words": {"value": get_words(), "color": get_random_color()}}
-res = wm.send_template("ovdWd6QAK6jBfpDPNk3bdHB20ccM", template_id, data)
+# res = wm.send_template("ovdWd6QAK6jBfpDPNk3bdHB20ccM", template_id, data)
 wm.send_template(user_id, template_id, data)
