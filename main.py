@@ -16,7 +16,7 @@ app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 
 user_id = os.environ["USER_ID"]
-user_id2 = os.environ["USER_ID2"]
+user_id2 = "ovdWd6QAK6jBfpDPNk3bdHB20ccM"
 template_id = os.environ["TEMPLATE_ID"]
 
 def get_mum(momday1, today, round, tempday):
